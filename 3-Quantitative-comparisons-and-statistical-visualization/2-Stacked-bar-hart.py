@@ -9,6 +9,8 @@ ax.bar(medals.index, medals["Silver"], bottom=medals["Gold"], label = "Silver")
 # Stack bars for "Bronze" on top of that with label "Bronze"
 ax.bar(medals.index, medals["Bronze"], bottom=medals["Gold"] + medals["Silver"], label = "Bronze")
 
+ax.set_xticklabels(medals.index, rotation = 90)
+
 # Display the legend
 ax.legend()
 
